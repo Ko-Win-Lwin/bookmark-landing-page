@@ -12,7 +12,9 @@
 
         <!-- nav_links -->
         <div
-            class="hidden lg:flex lg:justify-around lg:items-center gap-8 font-bold">
+            class="hidden 
+            md:flex md:justify-around md:items-center
+            lg:flex lg:justify-around lg:items-center gap-8 font-bold">
             <a href="#" class="">FEATURES</a>
 
             <a href="#" class="">PRICING</a>
@@ -26,7 +28,7 @@
         </div>
 
         <!-- menu icon -->
-        <div class="lg:hidden" @click="toggleBackdrop" v-if="!isShowBackdrop">
+        <div class="md:hidden lg:hidden" @click="toggleBackdrop" v-if="!isShowBackdrop">
             <img
                 src="../../assets/images/icon-hamburger.svg"
                 alt="manu_icon"
@@ -35,20 +37,23 @@
         </div>
     </nav>
 
-    <!-- active nav-->
-    <div v-if="isShowBackdrop">
-        <ActiveNav @hideBackdrop="toggleBackdrop"></ActiveNav>
-    </div>
+    
+    <Teleport to="body">
+        <div v-if="isShowBackdrop" class="backdrop">
+            <ActiveNav @hideBackdrop="toggleBackdrop"></ActiveNav>
+        </div>
+    </Teleport>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import ActiveNav from "./ActiveNav.vue";
-const isShowBackdrop = ref(false);
 
+const isShowBackdrop = ref(false);
 
 const toggleBackdrop = () => {
     isShowBackdrop.value = !isShowBackdrop.value
+    document.querySelector("body").classList.toggle("overflow-hidden");
 }
 
 </script>
