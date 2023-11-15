@@ -6,15 +6,18 @@
         </div>
 
         <div class="w-[60%] mt-5 flex items-center mx-auto text-sm text-slate-600 text-center">
-            <div class="border-b-2 border-slate-50 w-[30%] mx-auto" :class="{'border-orange-400': isSimpleBookingBtn}">
+            <div class="border-b-2 border-slate-50 w-[30%] mx-auto hover:text-orange-400" 
+                :class="{'border-orange-400': isSimpleBookingBtn}">
                 <button @click="chooseTab('simpleBookingBtn')" class="py-4">Simple Bookmarking</button>
             </div>
 
-            <div class="border-b-2 border-slate-50 w-[30%] mx-auto" :class="{ 'border-orange-400': isSpeedySearchingBtn }">
+            <div class="border-b-2 border-slate-50 w-[30%] mx-auto hover:text-orange-400" 
+                :class="{ 'border-orange-400': isSpeedySearchingBtn }">
                 <button  @click="chooseTab('speedySearchingBtn')" class="py-4">Speedy Searching</button>
             </div>
 
-            <div class="border-b-2 border-slate-50 w-[30%] mx-auto" :class="{'border-orange-400': isEasySharingBtn}">
+            <div class="border-b-2 border-slate-50 w-[30%] mx-auto hover:text-orange-400" 
+                :class="{'border-orange-400': isEasySharingBtn}">
                 <button  @click="chooseTab('easySharingBtn')" class="  py-4">Easy Sharing</button>
             </div>
         </div>
