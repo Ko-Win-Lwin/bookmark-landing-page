@@ -48,9 +48,9 @@
           <div class="relative lg:w-[65%] mx-auto">
             <img src="../assets/images/illustration-hero.svg" alt="" class="lg:pr-10" />
             <div
-              class="bg-indigo-500 absolute z-[-2]
+              class="bg-indigo-500 absolute z-[-2] md:hidden
               w-[250px] h-[160px] rounded-l-[150px] top-[70px] right-0
-              lg:w-[340px] lg:h-[230px] lg:top-[100px] lg:right-0"></div>
+              lg:block lg:w-[340px] lg:h-[230px] lg:top-[100px] lg:right-0"></div>
           </div>
         </div>
 </template>
