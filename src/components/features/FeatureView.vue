@@ -1,39 +1,45 @@
 <template>
-    <div class="my-[8%]">
+    <div class="my-20 lg:my-[8%]">
         <div class="text-center ">
-            <h2 class="text-slate-700 text-2xl">Features</h2>
-            <p class="text-slate-500 text-[12px] mt-2 w-[30%] mx-auto leading-5">Our aim is to make it esay and quick for you to accept your favourite website. Your bookmark sync between your devices so you can access them on the go.</p>
+            <h2 class="text-slate-700 text-2xl font-semibold">Features</h2>
+            <p class="text-slate-500 text-sm mt-2 w-[77%] lg:w-[30%] mx-auto leading-5">Our aim is to make it esay and quick for you to accept your favourite website. Your bookmark sync between your devices so you can access them on the go.</p>
         </div>
 
-        <div class="w-[60%] mt-5 flex items-center mx-auto text-sm text-slate-600 text-center">
-            <div class="border-b-2 border-slate-50 w-[30%] mx-auto hover:text-orange-400" 
-                :class="{'border-orange-400': isSimpleBookingBtn}">
+        <div class="w-[80%] lg:w-[60%] mt-10 lg:mt-5 flex-row lg:flex items-center mx-auto text-sm text-center">
+            <hr class="lg:hidden block w-full mx-auto h-[1px] bg-slate-200">
+            <div class="border-b-2 w-[60%] lg:w-[30%] mx-auto hover:text-orange-400" 
+                :class="{'border-orange-400 text-slate-800': isSimpleBookingBtn, 'border-slate-50 text-slate-500': !isSimpleBookingBtn}">
                 <button @click="chooseTab('simpleBookingBtn')" class="py-4">Simple Bookmarking</button>
             </div>
+            <hr class="lg:hidden block w-full mx-auto h-[1px] bg-slate-200">
 
-            <div class="border-b-2 border-slate-50 w-[30%] mx-auto hover:text-orange-400" 
-                :class="{ 'border-orange-400': isSpeedySearchingBtn }">
+
+
+            <div class="border-b-2 w-[60%] lg:w-[30%] mx-auto hover:text-orange-400" 
+                :class="{ 'border-orange-400 text-slate-800': isSpeedySearchingBtn, 'border-slate-50 text-slate-500': !isSpeedySearchingBtn }">
                 <button  @click="chooseTab('speedySearchingBtn')" class="py-4">Speedy Searching</button>
             </div>
+            <hr class="lg:hidden block w-full mx-auto h-[1px] bg-slate-300">
 
-            <div class="border-b-2 border-slate-50 w-[30%] mx-auto hover:text-orange-400" 
-                :class="{'border-orange-400': isEasySharingBtn}">
-                <button  @click="chooseTab('easySharingBtn')" class="  py-4">Easy Sharing</button>
+            <div class="border-b-2 w-[60%] lg:w-[30%] mx-auto hover:text-orange-400" 
+                :class="{ 'border-orange-400 text-slate-800': isEasySharingBtn, 'border-slate-50 text-slate-500': !isEasySharingBtn }">
+                <button  @click="chooseTab('easySharingBtn')" class="py-4">Easy Sharing</button>
             </div>
+            <hr class="lg:hidden block w-full mx-auto h-[1px] bg-slate-300">
         </div>
-        <hr class="w-[58%] mx-auto h-[1px] bg-slate-300">
+        <hr class="hidden lg:block w-[58%] mx-auto h-[1px] bg-slate-300">
 
         
 
         
 
         <div v-if="isSimpleBookingBtn">
-            <div class="flex justify-between mt-[5%] mx-auto relative">
+            <div class="flex-row lg:flex justify-between mt-10 lg:mt-[5%] mx-auto relative">
                 <div>
-                    <img src="../../assets/images/illustration-features-tab-1.svg" alt="" class="w-[60%] ml-28" />
+                    <img src="../../assets/images/illustration-features-tab-1.svg" alt="" class="w-[80%] mx-auto lg:w-[60%] lg:ml-28" />
                     <FeatureBackground></FeatureBackground>
                 </div>
-                <div class="w-[40%] mt-10">
+                <div class="w-[80%] mx-auto lg:w-[40%] mt-16 lg:mt-10">
                     <FeatureContent>
                         <template #title>
                             Bookmark in one click
@@ -50,12 +56,12 @@
 
 
         <div v-if="isSpeedySearchingBtn" >
-            <div class="flex justify-between mt-[5%] mx-auto relative">
+            <div class="flex-row lg:flex justify-between mt-10 lg:mt-[5%] mx-auto relative">
                 <div>
-                    <img src="../../assets/images/illustration-features-tab-2.svg" alt="" class="w-[60%] ml-40" />
-                    <FeatureBackground></FeatureBackground>
+                    <img src="../../assets/images/illustration-features-tab-2.svg" alt="" class="w-[70%] ml-16 mx-auto lg:w-[60%] lg:ml-40" />
+                    <FeatureBackground class=""></FeatureBackground>
                 </div>
-                <div class="w-[40%] mt-10">
+                <div class="w-[80%] mx-auto lg:w-[40%] mt-10">
                     <FeatureContent>
                         <template #title>
                             Intelligent Search
@@ -72,12 +78,12 @@
 
 
         <div v-if="isEasySharingBtn" >
-            <div class="flex justify-between mt-[5%] mx-auto relative">
+            <div class="flex-row lg:flex justify-between mt-10 lg:mt-[5%] mx-auto relative">
                 <div>
-                    <img src="../../assets/images/illustration-features-tab-3.svg" alt="" class="w-[60%] ml-40" />
+                    <img src="../../assets/images/illustration-features-tab-3.svg" alt="" class="w-[70%] ml-16 lg:w-[60%] lg:ml-40" />
                     <FeatureBackground></FeatureBackground>
                 </div>
-                <div class="w-[40%] mt-10">
+                <div class="w-[80%] mx-auto lg:w-[40%] mt-10">
                     <FeatureContent>
                         <template #title>
                             Share your bookmarks

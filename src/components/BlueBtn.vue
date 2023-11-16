@@ -1,6 +1,6 @@
 <template>
     <div class="
-        font-bold flex items-center justify-around mt-10 px-2
+        font-bold flex items-center justify-around px-2
         lg:px-0 lg:justify-normal lg:mt-0 lg:gap-4">
         <a href="#">
             <button id="blueBtn"
