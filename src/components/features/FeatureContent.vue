@@ -14,15 +14,15 @@
             <slot name="content"></slot>
         </p>
 
-        <FeatureBtn>
-            <template #featureBtn>
+        <BlueBtn>
+            <template #blueBtn>
                 More Info
             </template>
-        </FeatureBtn>
+        </BlueBtn>
 </template>
 
 <script setup>
-import FeatureBtn from './FeatureBtn.vue';
+import BlueBtn from '../BlueBtn.vue';
 </script>
 
 <style>
