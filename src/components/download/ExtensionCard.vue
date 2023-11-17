@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center gap-3 py-5  rounded-md shadow-md">
+  <div class="flex flex-col lg:justify-center lg:items-center gap-3 pt-10 pb-5 w-72 lg:w-50 rounded-lg shadow-xl">
     <div class="px-10 flex flex-col justify-center items-center">
         <slot></slot>
         <h3 id="extention_title" class="font-semibold text-slate-700 mt-8">
@@ -10,7 +10,7 @@
         </p>
     </div>
 
-    <span class="text-slate-400">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</span>
+    <span class="text-slate-400">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </span>
 
     <BlueBtn>
         <template #blueBtn>

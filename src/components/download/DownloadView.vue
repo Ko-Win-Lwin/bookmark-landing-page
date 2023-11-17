@@ -1,44 +1,47 @@
 <template>
-    <div class="mt-20 lg:mt-[15%]">
+    <div class="mt-32 mb-20 lg:mb-0 lg:mt-[15%]">
         <div class="text-center ">
             <h2 class="text-slate-700 text-2xl font-semibold">Download the extension</h2>
             <p class="text-slate-500 text-sm mt-2 w-[77%] lg:w-[33%] mx-auto leading-5">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
          </div> 
     </div>
     
-    <div class="flex gap-10 items-center mx-auto justify-center">
-        <ExtensionCard class="align-top">
-            <img src="../../assets/images/logo-chrome.svg" alt="chrome-logo">
-            <template #extension_title>
-                Add to Chrome
-            </template>
+    <div class="flex flex-col lg:flex-row gap-16 lg:gap-10 items-center mx-auto justify-center">
+        <div class="align-top">
+            <ExtensionCard >
+                <img src="../../assets/images/logo-chrome.svg" alt="chrome-logo">
+                <template #extension_title>
+                    Add to Chrome
+                </template>
+                <template #extension_version>
+                    62
+                </template>
+            </ExtensionCard>
+        </div>
 
-            <template #extension_version>
-                62
-            </template>
-        </ExtensionCard>
+        <div class="align-middle lg:mt-20">
+            <ExtensionCard >
+                <img src="../../assets/images/logo-firefox.svg" alt="firefox-logo">
+                <template #extension_title>
+                    Add to Firefox
+                </template>
+                <template #extension_version>
+                        55
+                </template>
+            </ExtensionCard>
+        </div>
 
-        <ExtensionCard class="align-middle mt-20">
-            <img src="../../assets/images/logo-firefox.svg" alt="firefox-logo">
-            <template #extension_title>
-                Add to Firefox
-            </template>
-
-            <template #extension_version>
-                    55
-            </template>
-        </ExtensionCard>
-
-        <ExtensionCard class="align-bottom mt-40">
-            <img src="../../assets/images/logo-opera.svg" alt="opera-logo">
-            <template #extension_title>
-                Add to Opera
-            </template>
-
-            <template #extension_version>
-                46
-            </template>
-        </ExtensionCard>
+        <div class="align-bottom lg:mt-40">
+            <ExtensionCard >
+                <img src="../../assets/images/logo-opera.svg" alt="opera-logo">
+                <template #extension_title>
+                    Add to Opera
+                </template>
+                <template #extension_version>
+                    46
+                </template>
+            </ExtensionCard>
+        </div>
     </div>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
