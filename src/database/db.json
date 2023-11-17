@@ -1,0 +1,23 @@
+{
+    "FAQ" : [
+        {
+            "question": "What is Bookmark?", 
+            "answer" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum explicabo quas maxime culpa animi ex architecto officia inventore laudantium possimus voluptates, sunt saepe sapiente perferendis temporibus, voluptatum quos autem ullam!"
+        },
+
+        {
+            "question" : "How can I request a new browser?",
+            "answer" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum explicabo quas maxime culpa animi ex architecto officia inventore laudantium possimus voluptates, sunt saepe sapiente perferendis temporibus, voluptatum quos autem ullam!"
+        },
+
+        {
+            "question" : "Is there a mobile app?",
+            "answer" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum explicabo quas maxime culpa animi ex architecto officia inventore laudantium possimus voluptates, sunt saepe sapiente perferendis temporibus, voluptatum quos autem ullam!"
+        },
+
+        {
+            "question" : "What about other chrominum browser?",
+            "answer" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum explicabo quas maxime culpa animi ex architecto officia inventore laudantium possimus voluptates, sunt saepe sapiente perferendis temporibus, voluptatum quos autem ullam!"
+        }
+    ]
+}
