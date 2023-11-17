@@ -22,13 +22,11 @@
             </template>
         </BlueBtn>
     </div>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue';
-import BlueBtn from '../BlueBtn.vue';
+import BlueBtn from '../buttons/BlueBtn.vue';
 import QuestionBox from './QuestionBox.vue';
 
 const questions = ref([])

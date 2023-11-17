@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import BlueBtn from '../BlueBtn.vue';
+import BlueBtn from '../buttons/BlueBtn.vue';
 </script>
 
 <style>

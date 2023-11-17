@@ -20,10 +20,10 @@
 
 <script setup>
 import { ref } from "vue"
-const props = defineProps(['faq'])
-console.log(props.faq)
 
+const props = defineProps(['faq'])
 const showAnswer = ref(false)
+
 const toggleBtn = () => {
     showAnswer.value = !showAnswer.value
 }
