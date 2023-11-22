@@ -10,7 +10,7 @@
         </p>
     </div>
 
-    <span class="text-slate-400">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </span>
+    <span class="text-slate-400">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </span>
 
     <BlueBtn>
         <template #blueBtn>

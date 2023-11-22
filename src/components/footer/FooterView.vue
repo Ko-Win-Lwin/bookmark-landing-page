@@ -6,7 +6,7 @@
 
             <form @submit.prevent="" class="mt-5 flex flex-col lg:flex justify-center items-center gap-5">
                 <MailBox></MailBox>
-                <RedBtn>
+                <RedBtn class="">
                     <template #redBtn>
                         Contact Us
                     </template>
