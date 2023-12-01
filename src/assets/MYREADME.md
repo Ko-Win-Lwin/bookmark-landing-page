@@ -27,8 +27,8 @@ Users can:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Ko-Win-Lwin/bookmark-landing-page)
-- Live Site URL: [Add live site URL here](https://lnkd.in/gPFGwKPm)
+- Solution URL: [https://github.com/Ko-Win-Lwin/bookmark-landing-page]
+- Live Site URL: [https://lnkd.in/gPFGwKPm]
 
 ## My process
 
