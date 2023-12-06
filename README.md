@@ -29,7 +29,7 @@ Users can:
 ### Links
 
 - Solution URL: [https://github.com/Ko-Win-Lwin/bookmark-landing-page]
-- Live Site URL: [https://lnkd.in/gPFGwKPm]
+- Live Site URL: [https://roaring-lamington-8eab81.netlify.app/]
 
 ## My process
 
